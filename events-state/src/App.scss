@@ -19,7 +19,13 @@
     overflow: hidden;
     padding: 10px 0;
     width: auto;
-
+    
+      }
+    img {
+      display: inline;
+      margin-left: 5px;
+      
+    }
     ul {
       overflow: hidden;
       li {
@@ -39,4 +45,4 @@
       }
     }
   }
-}
+
