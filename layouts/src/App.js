@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import CardsView from './components/Cards/CardsView';
 import ListView from './components/List/ListView';
 import React from 'react';
@@ -27,9 +27,9 @@ function App() {
 
   return (
     <div className="App">
-      <i className="material-icons" 
+      <button className="material-icons" 
       onClick = {()=> onSwitch()}
-      >{icon}</i>
+      >{icon}</button>
       {icon==='view_list'? <CardsView products={products}/> : <ListView products={products}/>}
     </div>
   );
