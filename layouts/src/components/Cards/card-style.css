@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.card {
+    
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    justify-content: space-between;
+    position:relative;
+    margin-left: 220px;
+    margin-bottom: 100px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .price {
+    position: absolute;
+    margin: 0;
+    bottom:10px;
+    left:10px;
+    max-width:100%;
+  }
+
+  .product_name {  
+    margin: 0;
+  }
+
+  .color {
+    margin: 0;
+  }
+
+  button {
+    position: absolute;
+    margin: 0;
+    bottom:10px;
+    right: 10px;
+    max-width:100%;
+    
+  }
+
+  .card_block {
+    margin-top: 100px;
+    /* width: px; */
+  }
+
+  .material-icons {
+    color: #000000; 
+    font-size: 40px;
+    position: absolute;
+    margin-right: 10px;
+    top:10px;
+    right: 10px;
+    max-width:100%;
+  }
