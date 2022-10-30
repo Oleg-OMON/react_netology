@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.list_item {
+    display: block;
+    vertical-align: top;
+    justify-content: space-between;
+    position:relative;
+    margin-left: 220px;
+    margin-bottom: 1px;
+    background-color:rgb(255, 255, 255);
+  }
+
+  .img_list {
+    padding: auto;
+    width: 100px;
+    height: 100px;
+    display: inline;
+    margin: 0 ;
+    vertical-align: middle;
+    
+  }
+
+  .list_price {
+    margin-left: 100px;
+    display: inline;
+    color:rgb(165, 73, 73);
+
+  }
+
+  .list_product_name {
+    
+    margin-left: 100px;
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .list_color {
+    margin-left: 100px;
+    display: inline;
+  }
+
+  .list_corz {
+    display: inline;
+    margin-left: 100px;
+    border-radius: 30px;
+    border-color: rgb(165, 73, 73);
+    color:rgb(165, 73, 73);
+    
+  }
+
+  .list_card_block {
+    margin-top: 100px;
+    
+  }
+
+  
