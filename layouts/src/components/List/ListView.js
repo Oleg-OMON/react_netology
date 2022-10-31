@@ -1,8 +1,7 @@
 import './list-style.css'
 
 function ListView({products}) {
-    return (
-          
+    return ( 
             <div className="list_card_block">
             {products.map((obj, index) =>(      
                 <div className="list_item" key={index}>
