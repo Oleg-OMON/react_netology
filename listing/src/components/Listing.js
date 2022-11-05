@@ -1,7 +1,7 @@
 import React from 'react';
 import './listing-style.css'
 import axios from 'axios';
-
+import classNames from 'classnames';
 
 function Listing () {
     const [etsy, setEtsy] = React.useState([]);
@@ -19,13 +19,17 @@ function Listing () {
                 <div className="item" key={obj.listing_id}>
                     <div className="item-image">
                     <a href={obj.url}>
-                            <img src={obj.MainImage.url_570xN}></img>
+                            <img src={obj.MainImage ? obj.MainImage.url_570xN : null}></img>
                     </a>
                     </div>
                     <div className="item-details">
-                    <p className="item-title">{`${obj.title.length}` > 50 ? `${obj.title.substring(0, 50)}...` : obj.title}</p>
+                    <p className="item-title">{obj.title ? (`${obj.title.length}` > 50 ? `${obj.title.substring(0, 50)}...` : obj.title) : null}</p>
                     <p className="item-price">{obj.currency_code}{obj.price}</p>
-                    <p className="item-quantity level-medium">{obj.quantity} left</p>
+                    <p className={classNames("item-quantity", {
+                                "level-low": obj.quantity <= 10,
+                                "level-medium": 20 <= obj.quantity > 10,
+                                "level-high": obj.quantity > 20,
+                        })}>{obj.quantity} left</p>
                     </div>
                 </div>
         ))}
