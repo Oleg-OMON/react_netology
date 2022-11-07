@@ -16,10 +16,11 @@ function Listing () {
         return (
         <div className="item-list">
         {etsy && etsy.map((obj) => (
+                obj.state != 'removed' ? 
                 <div className="item" key={obj.listing_id}>
                     <div className="item-image">
                     <a href={obj.url}>
-                            <img src={obj.MainImage ? obj.MainImage.url_570xN : null}></img>
+                            <img src={obj.MainImage ? obj.MainImage.url_570xN : console.log(obj)}></img>
                     </a>
                     </div>
                     <div className="item-details">
@@ -31,7 +32,7 @@ function Listing () {
                                 "level-high": obj.quantity > 20,
                         })}>{obj.quantity} left</p>
                     </div>
-                </div>
+                </div> : null
         ))}
         </div>
         )
